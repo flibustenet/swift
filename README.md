@@ -36,7 +36,8 @@ Here is a short example from the docs
         AuthUrl:  "auth_url",
         Domain:   "domain",  // Name of the domain (v3 auth only)
         Tenant:   "tenant",  // Name of the tenant (v2 auth only)
-    }
+        Region:   "",        // Region to use eg "LON", "ORD" - default is use first region (v2,v3 auth only)
+    }
     // Authenticate
     err := c.Authenticate()
     if err != nil {
